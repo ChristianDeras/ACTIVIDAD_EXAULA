@@ -26,7 +26,7 @@ public class Invocar {
                         ApellidosAlumno = sc.nextLine();
                         System.out.println("Ingrese el numero de carnet");
                         CarnetAlumno = sc.nextLine();
-                        Alumnos.DatosAlumno (NombresAlumno,ApellidosAlumno,CarnetAlumno);
+                        Alumnos.DatosAlumno(NombresAlumno,ApellidosAlumno,CarnetAlumno);
                     
                     break;
                 default:
