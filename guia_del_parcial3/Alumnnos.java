@@ -1,5 +1,6 @@
 package guia_del_parcial3;
-
-public class Alumnnos {
+import java.util.Scanner;
+public class Alumnos {
+	
     
 }
