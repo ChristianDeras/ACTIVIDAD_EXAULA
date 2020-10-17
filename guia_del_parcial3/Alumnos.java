@@ -15,9 +15,9 @@ public class Alumnos {
 			
 			//Mostrando Los ingresados.
 			System.out.println("*******************************************");
-			System.out.println("El codigo de la carrera es: "+Nombres);
-			System.out.println("El Nombre de la carrera es: "+Apellidos);
-			System.out.println("La Duracion  de la carrera es: "+Carnet);
+			System.out.println("El nombre del Alumno es: "+NombresAlumno);
+			System.out.println("Los Apellidos del alumno son: "+ApellidosAlumno);
+			System.out.println("El carnet es: "+CarnetAlumno);
 			System.out.println("*******************************************");
 	}
     

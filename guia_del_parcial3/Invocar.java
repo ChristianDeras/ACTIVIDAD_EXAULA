@@ -14,19 +14,27 @@ public class Invocar {
                     
                     break;
                 case 2:
-                    
-                    break;
-                 case 3:
+						int c=0;
+		                do{
+		                c++;
 				 
 						String NombresAlumno,ApellidosAlumno,CarnetAlumno;
 						System.out.println("------------------------------");
+						System.out.println("Ingrese el numero de carnet");
+                        CarnetAlumno = sc.nextLine();
+						
                         System.out.println("Ingrese sus Nombres");
                         NombresAlumno = sc.nextLine();
+						
                         System.out.println("Ingrese sus Apellidos");
                         ApellidosAlumno = sc.nextLine();
-                        System.out.println("Ingrese el numero de carnet");
-                        CarnetAlumno = sc.nextLine();
+                        
                         Alumnos.DatosAlumno(NombresAlumno,ApellidosAlumno,CarnetAlumno);
+						 }while(c<5);
+                    
+                    break;
+                 case 3:
+						
                     
                     break;
                 default:
