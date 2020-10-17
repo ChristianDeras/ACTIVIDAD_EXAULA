@@ -13,8 +13,17 @@ public class Invocar {
                 case 1:
                     
                     break;
-                case 2:
-                    
+                case 2: 
+                        String nom,cod,duracion;
+                        System.out.println("------------------------------");
+                        System.out.println("Ingrese el codigo de la carrera");
+                        sc.nextLine();
+                        cod = sc.nextLine();
+                        System.out.println("Ingrese el Nombre de la carrera");
+                        nom = sc.nextLine();
+                        System.out.println("Ingrese la Duracion de la carrera");
+                        duracion = sc.nextLine();
+                         Alumnos.Carrera_Alumno(cod,nom,duracion);
                     break;
                  case 3:
                     
