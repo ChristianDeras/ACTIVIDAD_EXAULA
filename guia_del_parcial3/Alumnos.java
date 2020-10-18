@@ -1,5 +1,4 @@
 package guia_del_parcial3;
-
 public class Alumnos {
     //creando el metodo Carrera_Alumno
     public static void Carrera_Alumno(String cod_carrera,String Nom_carrera,String Duracion){
@@ -21,7 +20,6 @@ public class Alumnos {
 	//creando el metodo DatosAlumno
 	public static void DatosAlumno(String Nombres,String Apellidos,String Carnet)
 	{
-			Scanner Leer=new Scanner(System.in);
 			
 			//creando las variables locales a utilizar.
 		    String NombresAlumno,ApellidosAlumno,CarnetAlumno;
