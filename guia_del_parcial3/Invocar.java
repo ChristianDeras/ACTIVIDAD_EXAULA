@@ -34,8 +34,6 @@ public class Invocar {
 						System.out.println("------------------------------");
 						System.out.println("Ingrese el numero de carnet");
                         CarnetAlumno = sc.nextLine();
-						
-						
                         System.out.println("Ingrese sus Nombres");
                         NombresAlumno = sc.nextLine();
 						
