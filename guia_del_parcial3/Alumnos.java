@@ -35,5 +35,23 @@ public class Alumnos {
 			System.out.println("El carnet es: "+CarnetAlumno);
 			System.out.println("*******************************************");
 	}
-    
+	
+	//creando el metodo MateriasAcursar
+	public static void MateriasAcursar(String NombreMateria,int UnidadValorativa)
+	{
+		
+		//creando las variables locales a utilizar.
+			String NombreMat;
+			int UnidadVal;
+			
+			NombreMat=NombreMateria;
+			UnidadVal=UnidadValorativa;
+			
+			//Mostrando Los ingresados.
+			System.out.println("*******************************************");
+			System.out.println("El nombre de la materia es: "+NombreMat);
+			System.out.println("Las Unidades Valorativas son: "+UnidadVal);
+			System.out.println("*******************************************");
+	}
 }
+    
