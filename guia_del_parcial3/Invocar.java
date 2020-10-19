@@ -35,7 +35,22 @@ public class Invocar {
                     
                     break;
                  case 3:
+						int a=0;
+		                do{
+		                a++;
+				 
+						String NombreMat;
+						int UnidadVal;
+						System.out.println("------------------------------");
+						System.out.println("Ingrese el nombre de la materia");
+						sc.nextLine();
+                        NombreMat = sc.nextLine();
 						
+                        System.out.println("Ingrese las unidades valorativas");
+                        UnidadVal= sc.nextInt();
+						
+                        Alumnos.MateriasAcursar(NombreMat,UnidadVal);
+						 }while(a<5);
                     
                     break;
                 default:
