@@ -3,16 +3,46 @@ import java.util.*;
 
 public class EstructurasDeControl {
 
+	public static void seleccionar(){
+		Scanner sc = new Scanner(System.in);
+		int slc;
+		System.out.println("Seleccione la estructura de control a ejecutar");
+		System.out.println("Para la estructura simple ingrese 1");
+		System.out.println("Para la estructura doble ingrese 2");
+		System.out.println("Para la estructura multiple ingrese 3");
+		System.out.println("Para la estructura Do While ingrese 4");
+		System.out.println("Para la estructura For ingrese 5");
+		slc = sc.nextInt();
+		switch (slc){
+			case 1:
+			EstructurasDeControl.simple();
+			break;
+			case 2:
+			EstructurasDeControl.doble();
+			break;
+			case 3:
+			EstructurasDeControl.multiple();
+			break;
+			case 4:
+			EstructurasDeControl.dowhile();
+			break;
+			case 5:
+			EstructurasDeControl.formethod();
+			break;
+			default:
+				System.out.println("Seleccion erronea");
+			break;
+		}
+	}
     
     public static void simple(){
     	Scanner sc = new Scanner(System.in);
     	String secret;
     	System.out.println("Desea saber nuestro secreto, si quieres verlo ingrese 'SI' ");
     	secret = sc.nextLine();
-    	if (secret == "SI") {
-    		System.out.println("Nuestro secreto es que no sabemos que estamos haciendo");
+    	if (secret.equalsIgnoreCase("si")) {
+    		System.out.println("Nuestro secreto es, que nos gusta el chambre igual que a ti");
     	}
-
     }
     
     public static void doble(){
@@ -66,7 +96,7 @@ public class EstructurasDeControl {
 
     public static void dowhile(){
     	Scanner sc = new Scanner(System.in);
-    	int base, potencia, total = 1;
+    	int base, potencia, total = 1, mem = 0;
     	System.out.println("Vamos a elevar un numero a una potencia");
     	System.out.println("ingrese la base");
     	base = sc.nextInt();
@@ -76,10 +106,10 @@ public class EstructurasDeControl {
     		do{
     			total = total * base;
     			potencia = potencia - 1;
+    			mem = mem +1;
     		}
     		while (potencia != 0);
-    		total = total / base;
-    	System.out.println(base+"^"+potencia+"= "+total);
+    	System.out.println(base+"^"+mem+"= "+total);
     	}
     	else{
     		System.out.println("Syntax Error");
@@ -88,16 +118,17 @@ public class EstructurasDeControl {
 
     public static void formethod(){
     	Scanner sc = new Scanner(System.in);
-    	int base, radical, total;
+    	Double base, radical, total, mem;
     	System.out.println("Vamos a sacar la raiz de un numero");
     	System.out.println("ingrese la base");
-    	base = sc.nextInt();
+    	base = sc.nextDouble();
     	System.out.println("ingrese el radical");
-    	radical = sc.nextInt();
+    	radical = sc.nextDouble();
     	total = base;
+    	mem = radical;
     	if (radical > 0 && base > 0) {
     		for (radical = radical;radical <= 0; radical--); {
-				total = total/base;
+				total = (mem + base/mem) / mem;
     		}   		
     	System.out.println(radical+"√"+base+"= "+total);
     	}

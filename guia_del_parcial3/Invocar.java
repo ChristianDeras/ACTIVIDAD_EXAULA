@@ -11,6 +11,8 @@ public class Invocar {
             resp= sc.nextInt();
             switch (resp) {
                 case 1:
+                EstructurasDeControl edc = new EstructurasDeControl();
+                edc.seleccionar();
                     
                     break;
                 case 2:
