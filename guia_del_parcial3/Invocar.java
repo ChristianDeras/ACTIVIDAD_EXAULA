@@ -61,8 +61,23 @@ public class Invocar {
                     
                     break;
                  case 3:
-						
-                    
+                        Evaluaciones eva = new Evaluaciones();
+                        System.out.println("Ingrese las Nota de su primer cuestionario");
+                        eva.setNota1(sc.nextDouble());
+                        System.out.println("Ingrese las Nota de su primer corto");
+                        eva.setNota2(sc.nextDouble());
+                        System.out.println("Ingrese las Nota de su primer actividad");
+                        eva.setNota3(sc.nextDouble());
+                        System.out.println("Ingrese las Nota de su primera actividad grupal");
+                        eva.setNota4(sc.nextDouble());
+                        System.out.println("Ingrese las Nota de su primer PARCIAL");
+                        eva.setNota5(sc.nextDouble());
+                        System.out.println("--------------------------------");
+                        System.out.println("El promedio de sus notas fue de "+eva.Retorno());
+                        System.out.println("--------------------------------");
+                        System.out.println("IMPRIMIENDO SU BOLETA DE NOTAS");
+
+                        eva.metodo3();
                     break;
                 default:
                 System.out.println("Datos incorrectos por favor intenta de nuevo");
